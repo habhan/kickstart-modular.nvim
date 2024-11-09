@@ -20,7 +20,6 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
 
-
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
@@ -44,6 +43,13 @@ require('lazy').setup({
 
   require 'kickstart/plugins/treesitter',
 
+  -- NOTE: After this are the plugins i installed myself
+
+  require 'kickstart/plugins/flexoki-neovim',
+
+  require 'kickstart/plugins/obsidian',
+
+  require 'kickstart/plugins/noice',
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
@@ -74,18 +80,18 @@ require('lazy').setup({
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
     icons = vim.g.have_nerd_font and {} or {
-      cmd = '⌘',
-      config = '🛠',
-      event = '📅',
+      cmd = '🛠',
+      config = '🧙',
+      event = '❗️',
       ft = '📂',
-      init = '⚙',
+      init = '🏅',
       keys = '🗝',
       plugin = '🔌',
-      runtime = '💻',
-      require = '🌙',
+      runtime = '🦵',
+      require = '💻',
       source = '📄',
       start = '🚀',
-      task = '📌',
+      task = '📅',
       lazy = '💤 ',
     },
   },
