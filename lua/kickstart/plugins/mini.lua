@@ -34,6 +34,9 @@ return {
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
+      --  NOTE: Attempt to add file explorer
+      require('mini.files').setup()
+      vim.keymap.set('n', '<leader>f', ':lua MiniFiles.open()<CR>', { desc = 'Open mini [F]ilebrowser' })
     end,
   },
 }

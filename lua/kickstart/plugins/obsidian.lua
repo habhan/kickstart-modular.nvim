@@ -16,6 +16,17 @@ return {
         path = '~/Org',
       },
     },
+    mappings = {
+      ['gf'] = {
+        action = function()
+          return require('obsidian').util.gf_passthrough()
+        end,
+        opts = { noremap = false, expr = true, buffer = true },
+      },
+    },
+    note_id_func = function(title)
+      return title
+    end,
   },
 }
 -- NOTE: Below are the commands taken from the plugin github page

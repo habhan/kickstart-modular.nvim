@@ -1,7 +1,9 @@
 -- This is meant to help the obsidian plugin
 vim.opt_local.conceallevel = 2
 
-vim.keymap.set('n', '<leader>oo', '<cmd>ObsidianBacklinks<CR>', { desc = '[Obsidian] [O]pen Backlinks' })
+vim.keymap.set('n', '<leader>oo', '<cmd>ObsidianBacklinks<CR>', { desc = '[O]bsidian [O]pen Backlinks' })
+vim.keymap.set('n', '<leader>ot', '<cmd>ObsidianTags<CR>', { desc = '[O]bsidian [T]ags' })
+vim.keymap.set('n', '<leader>op', '<cmd>ObsidianPasteImg<CR>', { desc = '[O]bsidian [P]aste Image' })
 -- NOTE: Below are the commands taken from the plugin github page
 --[[Commands
 
